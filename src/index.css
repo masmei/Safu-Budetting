@@ -95,14 +95,14 @@ input[type="submit"] {
   position: fixed;
   display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: center;
 }
 
 .modalContainer {
   width: 500px;
   height: 200px;
   border-radius: 12px;
-  background-color: white;
+  background-color: rgb(84, 41, 41);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;

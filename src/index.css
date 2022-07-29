@@ -1,11 +1,26 @@
+* body{
+   background-color: #21205a;
+  color: white;
+}
+
 nav {
-  background: #d1a4fa;
+  background-color: #2d2431;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0 1em;
   box-shadow: 2px 2px 4px grey;
   margin-bottom: 1em;
+  gap: 2rem;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font-size: 15px;
 }
 
 main {
@@ -15,7 +30,7 @@ main {
 
 a {
   text-decoration: none;
-  color: #4442a5;
+  color: white;
 }
 
 h4 {
@@ -31,6 +46,7 @@ table {
 
 td {
   text-align: center;
+  
 }
 
 tbody td:not(td:first-of-type):hover {
@@ -39,13 +55,11 @@ tbody td:not(td:first-of-type):hover {
 }
 
 tbody tr:nth-child(even) {
-  background: #f4eafd;
+  background: #6158a1;
 }
 
-.New {
-  /* border: 1px solid gold;
-  margin: auto;
-  width: 95%; */
+tbody tr:nth-child(odd) {
+  background: #403c5c;
 }
 
 .New form {
@@ -73,4 +87,56 @@ input[type="submit"] {
   display: flex;
   justify-content: space-around;
   width: 50%;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  text-align: center;
+}
+
+.error {
+  font-size: 1000px;
+}
+.Home{
+  text-align: center;
+}
+
+.showPage {
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "b c c c";
+}
+
+.balance {
+  grid-area: a;
+  text-align: center;
+}
+.sort {
+  grid-area: b;
+
+}
+.sort * {
+  margin-bottom: 15px;
+}
+
+.transactions {
+  grid-area: c;
 }

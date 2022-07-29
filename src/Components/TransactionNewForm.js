@@ -10,6 +10,7 @@ function TransactionNewForm() {
     date: "",
     amount: "",
     from: "",
+    category: ""
   });
   const navigate = useNavigate();
 
@@ -48,10 +49,10 @@ function TransactionNewForm() {
         <input
           id="date"
           type="text"
-          pattern="\d{1,2}/\d{1,2}/\d{4}"
+          pattern="\d{4}/\d{1,2}/\d{1,2}"
           required
           value={transaction.date}
-          placeholder="mm/dd/yyyy"
+          placeholder="yyyy/mm/dd"
           onChange={handleTextChange}
         />
         <label htmlFor="amount">Amount:</label>
@@ -72,6 +73,17 @@ function TransactionNewForm() {
           placeholder="where is this from?"
           onChange={handleTextChange}
         />
+          <label htmlFor="category">Category:</label>
+          <br/>
+        <select onChange={handleTextChange} name="category" id="category">
+          <option value="Entertainment">Entertainment</option>
+          <option value="Income">Income</option>
+          <option value="Investment">Investment</option>
+          <option value="Food">Food</option>
+          <option value="Housing">Housing</option>
+          <option value="Ultilities">Utilities</option>
+          <option value="Miscellaneous">Miscellaneous</option>
+        </select>
         <br />
         <input type="submit" />
       </form>

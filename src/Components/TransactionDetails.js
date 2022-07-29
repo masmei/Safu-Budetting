@@ -44,6 +44,9 @@ function TransactionDetails() {
         <h4>
           From: {transaction.from}
         </h4>
+        <h4>
+          Category: {transaction.category}
+        </h4>
       <div className="showNavigation">
         <div>
           {" "}

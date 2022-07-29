@@ -10,6 +10,9 @@ function Transaction({ transaction, index }) {
       <Link to={`/transactions/${index}`}>{transaction.name}</Link>
       </td>
       <td>
+        <p>{transaction.category}</p>
+      </td>
+      <td>
         <p>${transaction.amount}</p>
       </td>
     </tr>

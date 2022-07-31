@@ -3,8 +3,7 @@ export default function NavBar() {
   return (
     <nav>
        <h1>
-       
-        <Link to="/"> Safu</Link>
+        <Link to="/">💎 Safu</Link>
       </h1>
       <ul>
         <Link to="/transactions">Transactions</Link>
